@@ -17,7 +17,7 @@ let transporter = nodemailer.createTransport({
             from: "jackmingsschool@gmail.com",
             to: emailaddress,
             subject: "Jack Mings Project",
-            text: "Dear User, Thank you for your feedback! - From Jackmingsschool@https://jackmingsproject-app.herokuapp.com/",
+            text: "Dear User, Thank you for your feedback! - From JackMings@https://jackmingsproject-app.herokuapp.com/",
         };
 
         transporter.sendMail(mailOptions, function(err, success){
