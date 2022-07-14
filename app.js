@@ -14,7 +14,7 @@ app.use('/img', express.static(__dirname + 'public/img'))
 app.set('view engine', 'ejs')
 
 app.get('', (req, res) => {
-    res.render('views/index')
+    res.render('views/Index')
 })
 
 app.get('/EducationHistory', (req, res) => {
