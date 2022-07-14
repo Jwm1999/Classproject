@@ -14,27 +14,27 @@ app.use('/img', express.static(__dirname + 'public/img'))
 app.set('view engine', 'ejs')
 
 app.get('', (req, res) => {
-    res.render('views/Index')
+    res.render('Index')
 })
 
 app.get('/EducationHistory', (req, res) => {
-    res.render('views/EducationHistory')
+    res.render('EducationHistory')
 })
 
 app.get('/Index', (req, res) => {
-    res.render('views/Index')
+    res.render('Index')
 })
 
 app.get('/WorkExperience', (req, res) => {
-    res.render('views/Workexperience')
+    res.render('Workexperience')
 })
 
 app.get('/Schedule', (req, res) => {
-    res.render('views/Schedule')
+    res.render('Schedule')
 })
 
 app.get('/FeedBackForm', (req, res) => {
-    res.render('views/FeedbackForm')
+    res.render('FeedbackForm')
 })
 
 // Listen on the port
