@@ -1,0 +1,97 @@
+	.logo{
+		font-weight:bold;
+		text-transform:uppercase;
+		font-size:45px;
+		font-family:Georgia;
+		color: white;	
+	}
+
+	.logo2{
+		font-weight:bold;
+		text-transform:uppercase;
+		font-size:20px;
+		font-family:Georgia;
+	}
+	
+	.logo3{
+		font-weight:bold;
+		text-transform:uppercase;
+		font-size:15px;
+		font-family:Georgia;
+	}
+
+	.sidebar{
+		text-transform:uppercase;
+		font-size:15px;
+		font-family:Georgia;	
+	}
+	
+	.white {
+		color:white;
+		font-family:Georgia;
+	}
+	
+	header{
+		height: 120px;
+		background-color: Black;
+		padding: 0 30px;
+	}
+	body {
+		background-image: url('../img/BACKGROUND.jpg');
+	}
+	nav a{
+		font-weight: bold;
+		font-size: 30px;
+		color: White;
+		text-decoration: none;
+	}
+
+	article{
+		height: 1100px;
+		width: 100%;
+	}
+
+	section{
+		display: flex;
+		justify-content: center;
+		height: 900px;
+		width: 70%
+		float right;
+		text-align: center;
+	}
+
+	aside{
+		float:left;
+		width:400px;
+		height:900px;
+	}
+
+	footer{
+		text-align: left;
+		height:100px;
+		padding: 0 40px;
+		background-color: black;
+	}
+
+	nav ul{
+		list-style:none;
+	}
+
+	nav li{
+		padding: 15px 0px;
+	}
+
+	.contact{
+		font-weight: bold;
+		font-size: 30px;
+		color: Black;
+		font-family: Georgia;
+		padding: 0 50px;
+	}
+	
+	.contactinfo{
+		font-size: 20px;
+		color: Black;
+		font-family: Georgia;
+		padding: 0 50px;
+	}
