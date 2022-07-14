@@ -11,7 +11,6 @@ app.use('/js', express.static(__dirname + 'public/js'))
 app.use('/img', express.static(__dirname + 'public/img'))
 
 // Set Views
-app.set('views', './views')
 app.set('view engine', 'ejs')
 
 app.get('', (req, res) => {
@@ -19,23 +18,23 @@ app.get('', (req, res) => {
 })
 
 app.get('/EducationHistory', (req, res) => {
-    res.render('EducationHistory')
+    res.render('views/EducationHistory')
 })
 
 app.get('/Index', (req, res) => {
-    res.render('Index')
+    res.render('views/Index')
 })
 
 app.get('/WorkExperience', (req, res) => {
-    res.render('Workexperience')
+    res.render('views/Workexperience')
 })
 
 app.get('/Schedule', (req, res) => {
-    res.render('Schedule')
+    res.render('views/Schedule')
 })
 
 app.get('/FeedBackForm', (req, res) => {
-    res.render('FeedbackForm')
+    res.render('views/FeedbackForm')
 })
 
 // Listen on the port
