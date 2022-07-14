@@ -26,7 +26,7 @@ app.get('/Index', (req, res) => {
 })
 
 app.get('/WorkExperience', (req, res) => {
-    res.render('Workexperience')
+    res.render('WorkExperience')
 })
 
 app.get('/Schedule', (req, res) => {
