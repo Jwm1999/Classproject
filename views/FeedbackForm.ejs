@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="author" content="Jack Mings">
+<meta name="description" content="Jack Mings' Feedback Form">
+
+	<title>Jack Mings' Feedback Form</title>
+<link rel="stylesheet" href="css/FeedbackFormStyle.css">
+<script defer src="js/FeedbackFormScript.js"></script>
+</head>
+<body>
+	<noscript>
+		<p>
+			This web page uses JavaScript.  For proper results you must use a web browser with Javascript enabled.
+		</p>
+	</noscript>
+
+	<header>
+		<div class="logo">Jack Mings<i><br><div class="logo2">BS Electrical Engineering<div class="logo3">Mn Business Administration</i></br>
+		<hr style="height :1px; width:100%; border-width:2px; color:white;">
+	</header>
+	<article>
+	<aside>
+		<nav>
+			<ul>
+				<li><a href="Index"><div class="sidebar">Home</a><li>
+				<li><a href="EducationHistory"><div class="sidebar">Education History</a><li>
+				<li><a href="WorkExperience"><div class="sidebar">Work Experience</a><li>
+				<li><a href="Schedule"><div class="sidebar">Schedule</a><li>
+				<li><a href="FeedbackForm"><div class="sidebar">Give Feedback</a><li>
+			</ul>
+			<p class="contact"> Contact Information </p>
+			<hr style="width:300px; padding: 0px 10px;">
+			<p class="contactinfo"> Email: Jack.Mings@siu.edu<br>
+				Phone: 618-841-5644
+			</p>
+		</nav>
+	</aside>
+
+	<section>
+		<div class="wrapper">
+			<div class ="form1">
+				<div class="feedbacktitle">
+					<h1>Give me feedback!<br></h1>
+					<h2 class="requiredtitle">*Required</h2>
+			<form class="form2" method="post" action="/" id="form">
+
+				<div>
+          				<label for="firstname">First Name *</label>
+          				<input name="firstname" type="firstname" id="firstname" value="" placeholder="Your First Name...">
+        			</div>
+
+       				<div>
+          				<label for="lastname">Last Name *</label>
+          				<input name="lastname" type="lastname" id="lastname" value="" placeholder="Your Last Name...">
+        			</div>
+
+        			<div>
+          				<label for="address">Home Address</label>
+          				<input name="address" type="address" id="address" value="" placeholder="Your Primary Address...">
+        			</div>
+
+        			<div>
+          				<label for="phonenumber">Phone Number *</label>
+          				<input name="phonenumber" type="phone" id="phonenumber" value="" maxlength="12" minlength="12" placeholder="XXX-XXX-XXXX...">
+        			</div>
+
+        			<div>
+          				<label for="emailaddress">Email Address *</label>
+          				<input name="emailaddress" type="emailaddress" id="emailaddress" value="" placeholder="...@email.com">
+        			</div>
+
+        			<div>
+          				<label for="commentsection">Comments *</label>
+          				<input name="commentsection" class="commentsection" type="commentsection" id="commentsection" value="" placeholder="Write your feedback here...">
+        			</div>
+
+        			<div class="button">
+          				<button type="submit" id="button" onclick="submitmessage()">Submit</button>
+        			</div>
+
+			</form>
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+			</div>
+		</div>
+		
+	</section>
+	</article>
+	<footer>
+		<p style="font-size: 30px; color: white; font-weight:bold;"> All Rights Reserved </p>
+	</footer>
+</body>
+</html>
