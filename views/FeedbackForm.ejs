@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="author" content="Jack Mings">
+<meta name="description" content="Jack Mings' Feedback Form">
+
+	<title>Jack Mings' Feedback Form</title>
+<link rel="stylesheet" href="css/FeedbackFormStyle.css">
+<script defer src="js/FeedbackFormScript.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+</head>
+<body ng-app="">
+	<noscript>
+		<p>
+			This web page uses JavaScript.  For proper results you must use a web browser with Javascript enabled.
+		</p>
+	</noscript>
+
+	<header>
+		<div class="logo">Jack Mings<i><br><div class="logo2">BS Electrical Engineering<div class="logo3">Mn Business Administration</i></br>
+		<hr style="height :1px; width:100%; border-width:2px; color:white;">
+	</header>
+	<article>
+	<aside>
+		<nav>
+			<ul>
+				<li><a href="Index"><div class="sidebar">Home</a><li>
+				<li><a href="EducationHistory"><div class="sidebar">Education History</a><li>
+				<li><a href="WorkExperience"><div class="sidebar">Work Experience</a><li>
+				<li><a href="Schedule"><div class="sidebar">Schedule</a><li>
+				<li><a href="FeedbackForm"><div class="sidebar">Give Feedback</a><li>
+			</ul>
+			<p class="contact"> Contact Information </p>
+			<hr style="width:300px; padding: 0px 10px;">
+			<p class="contactinfo"> Email: Jack.Mings@siu.edu<br>
+				Phone: 618-841-5644
+			</p>
+		</nav>
+	</aside>
+
+	<section>
+		<div class="wrapper">
+			<div class ="form1">
+				<div class="feedbacktitle">
+					<h1>Give me feedback!<br></h1>
+					<h2 class="requiredtitle">*Required</h2>
+			<form name="myForm" class="form2" method="post" action="/" id="form">
+
+				<div>
+          				<label for="firstname">First Name *</label>
+						<span ng-show="myForm.firstname.$touched && myForm.firstname.$invalid">First name is required.</span>
+          				<input name="firstname" ng-model="firstname" type="firstname" id="firstname" value="" placeholder="Your First Name..." required>
+        			</div>
+
+       				<div>
+          				<label for="lastname">Last Name *</label>
+						<span ng-show="myForm.lastname.$touched && myForm.lastname.$invalid">Last name is required.</span>
+          				<input name="lastname" ng-model="lastname" type="lastname" id="lastname" value="" placeholder="Your Last Name..." required>
+        			</div>
+
+        			<div>
+          				<label for="address">Home Address</label>
+          				<input name="address" type="address" id="address" value="" placeholder="Your Primary Address...">
+        			</div>
+
+        			<div>
+          				<label for="phonenumber">Phone Number *</label>
+						<span ng-show="myForm.phonenumber.$touched && myForm.phonenumber.$invalid">Phone number is required.</span>
+          				<input name="phonenumber" ng-model="phonenumber" type="phone" id="phonenumber" value="" maxlength="12" minlength="12" placeholder="XXX-XXX-XXXX..." required>
+        			</div>
+
+        			<div>
+          				<label for="emailaddress">Email Address *</label>
+						<span ng-show="myForm.emailaddress.$touched && myForm.emailaddress.$invalid">Email Address is required.</span>
+          				<input name="emailaddress" ng-model="emailaddress" type="emailaddress" id="emailaddress" value="" placeholder="...@email.com" required>
+        			</div>
+
+        			<div>
+          				<label for="commentsection">Comments *</label>
+						<span ng-show="myForm.commentsection.$touched && myForm.commentsection.$invalid">Comment is required.</span>
+          				<input name="commentsection" ng-model="commentsection" class="commentsection" type="commentsection" id="commentsection" value="" placeholder="Write your feedback here..." required>
+        			</div>
+
+        			<div class="button">
+          				<button type="submit" id="button" onclick="submitmessage()">Submit</button>
+        			</div>
+
+			</form>
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+			</div>
+		</div>
+		
+	</section>
+	</article>
+	<footer>
+		<p style="font-size: 30px; color: white; font-weight:bold;"> All Rights Reserved </p>
+	</footer>
+</body>
+</html>
